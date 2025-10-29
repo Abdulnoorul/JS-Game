@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
   height: 100vh;
   color: #333;
@@ -168,4 +168,137 @@ main {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 56.25%; /* ~9px base font */
+  }
+
+  main {
+    width: 90%;
+    height: 55rem;
+  }
+
+  .player {
+    padding: 6rem;
+  }
+
+  .name {
+    font-size: 3rem;
+  }
+
+  .score {
+    font-size: 6rem;
+  }
+
+  .current {
+    width: 75%;
+    padding: 1.5rem;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+    padding: 0.6rem 2rem;
+  }
+
+  .dice {
+    height: 8rem;
+    top: 14rem;
+  }
+}
+
+/* MOBILE LANDSCAPE / SMALL TABLETS (max-width: 768px) */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+  }
+
+  .player {
+    width: 100%;
+    padding: 5rem 3rem;
+  }
+
+  .btn {
+    position: static;
+    transform: none;
+    margin: 1rem auto;
+    display: block;
+  }
+
+  .dice {
+    position: static;
+    margin: 2rem auto;
+    height: 8rem;
+    transform: none;
+  }
+
+  .name {
+    font-size: 2.8rem;
+  }
+
+  .score {
+    font-size: 5rem;
+  }
+
+  .current {
+    width: 80%;
+    padding: 1.2rem;
+  }
+}
+
+/* MOBILE PORTRAIT (max-width: 480px) */
+@media (max-width: 480px) {
+  html {
+    font-size: 50%; /* smaller base font for small screens */
+  }
+
+  body {
+    align-items: flex-start;
+    padding: 2rem 0;
+  }
+
+  main {
+    width: 95%;
+    border-radius: 6px;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  }
+
+  .player {
+    padding: 3rem 2rem;
+  }
+
+  .name {
+    font-size: 2.2rem;
+  }
+
+  .score {
+    font-size: 4rem;
+  }
+
+  .current {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .current-label {
+    font-size: 1.4rem;
+  }
+
+  .current-score {
+    font-size: 2.8rem;
+  }
+
+  .btn {
+    width: 80%;
+    font-size: 1.4rem;
+    padding: 0.8rem 1.6rem;
+  }
+
+  .dice {
+    height: 6rem;
+    margin: 1.5rem auto;
+  }
 }
